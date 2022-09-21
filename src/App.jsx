@@ -27,7 +27,8 @@ import VerifyOtp from './Screens/VerifyOtp/Index';
 import ProfessionalProfile from './Screens/ProfessionalProfile/Index';
 import BecomePro2 from './Screens/BecomeProfessional/BecomePro';
 import PostDetails from "./Screens/PostDetails/Index";
-import PaymentInfo from './Screens/BillSummary/Index'
+import PaymentInfo from './Screens/BillSummary/Index';
+import PropertyInfo from './Screens/PropertyInfo/Index';
 
 export const SidebarContext = createContext();
 
@@ -81,6 +82,7 @@ function App() {
           <Route path="story-list" element={<StoryList />} />
           <Route path="request-list" element={<RequestList />} />
           <Route path="newsfeed-list" element={<NewsfeedList />} />
+          <Route path="property-info" element={<PropertyInfo />} />
           <Route path="confirmed" element={<Confirmed />} />
           <Route path="confirmation" element={<Confirmaton />} />
           <Route path="become-pro2" element={<BecomePro2 />} />
