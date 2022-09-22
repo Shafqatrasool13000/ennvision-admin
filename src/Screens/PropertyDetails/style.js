@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { greenishColor, lightColor1, lightGrey3, lightGrey4, lightGrey5, lightGrey6, PrimaryColor, pureDark, secondaryDark4, tertiaryGrey5, tertiaryGrey7, tertiaryGrey8, tertiaryGrey9, whiteColor } from "../../Components/GlobalStyle";
+import { greenishColor, lightColor1, lightGrey4, lightGrey5, lightGrey6, PrimaryColor, pureDark, secondaryDark4, tertiaryGrey5, tertiaryGrey7, tertiaryGrey8, tertiaryGrey9, whiteColor } from "../../Components/GlobalStyle";
 
 export const PropertyDetailsStyled=styled.div`
 padding-top: 46px;

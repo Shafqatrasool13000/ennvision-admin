@@ -6,6 +6,8 @@ import FormControl from "../../Components/FormControl";
 import { Formik } from "formik";
 import * as Yup from "yup";
 import emptyBox from '../../assets/icons/ic_add_property_type.svg';
+import Gallery from "./AdditionalDetails";
+import FeatureDetails from "./FeatureDetails";
 
 
 const Index = () => {
@@ -31,6 +33,7 @@ const Index = () => {
     const propertyTypes=['Residential','Commercial','Plot']
 
     return (
+        <>
         <PropertyInfo>
             <Container>
                 <TertiraryHeading className='ms-3'>Fill Property Information</TertiraryHeading>
@@ -83,7 +86,7 @@ const Index = () => {
                                 </Col>
                             </Row>
                             <Row className="property-types align-items-center">
-                                <Col md={6} className="type mb-5">
+                                <Col md={6} className="type">
                                     <h6 className="heading">Type of Property</h6>
                                     <div className="types-radio d-flex type gap-3 w-100 mt-3">
                                         {
@@ -125,6 +128,9 @@ const Index = () => {
                 </Formik>
             </Container>
         </PropertyInfo>
+        <Gallery/>
+        <FeatureDetails/>
+        </>
     )
 }
 

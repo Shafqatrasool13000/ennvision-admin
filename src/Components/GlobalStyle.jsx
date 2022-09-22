@@ -39,6 +39,7 @@ export const tertiaryGrey12='#8E8E93';
 export const tertiaryGrey13='#ECF0F3';
 export const tertiaryGrey14='#717272';
 export const tertiaryGrey15='#FCFBFBB3';
+export const tertiaryGrey16='#F8F8F8';
 export const lightblue='#04A4D8';
 export const lightblue2='#049CCE';
 
