@@ -197,27 +197,32 @@ background-color: red;
 }
 
 .features-container{
+
 &:not(:last-child){
 border-bottom: 1px solid ${lightGrey5};
 }
+
 &-title{
 color: ${tertiaryGrey7};
 font-size: 19px;
 margin-top: 12px;
 }
+
 .feature{
 margin-top: 14px;
+
 &-text{
 color: ${tertiaryGrey7};
 font-size: 14px;
 }
 }
 }
-
 }
+
 .location-map{
 height: 500px;
 background: lightpink;
 margin-top: 32px;
 }
+
 `

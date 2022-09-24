@@ -1,6 +1,8 @@
 import { Col, Container, Row } from "react-bootstrap";
 import selectIcon from '../../assets/icons/ic_add_property_additional.svg';
+import Headbar from "../../Components/Headbar/Headbar";
 import { FeatureDetailsStyled } from "./style";
+import addFeatureIcon from '../../assets/icons/ic_add_property_general_info_add.svg';
 
 const FeatureDetails = () => {
 
@@ -17,6 +19,9 @@ const FeatureDetails = () => {
     return (
         <FeatureDetailsStyled>
             <Container>
+                <div className="mt-4">
+                <Headbar title='Additional Details' icon={addFeatureIcon}/>
+                </div>
                 <div className="features-container pb-3">
                     <p className="features-container-title mb-0">Features</p>
                     <Row>

@@ -40,6 +40,8 @@ export const tertiaryGrey13='#ECF0F3';
 export const tertiaryGrey14='#717272';
 export const tertiaryGrey15='#FCFBFBB3';
 export const tertiaryGrey16='#F8F8F8';
+export const tertiaryGrey17='#D1D1D6';
+
 export const lightblue='#04A4D8';
 export const lightblue2='#049CCE';
 
@@ -92,6 +94,12 @@ font-family: 'EnnVisionsMedium';
 export const TertiraryHeading1 = styled.h6`
 color: ${lightDark};
 font-size: 20px;
+`
+export const TetraHeading=styled.div`
+
+font-size: 16px;
+color: #232837;
+font-family: 'EnnVisionsMedium';
 `
 export const TertiraryHeadingMini = styled.h6`
 color: ${secondaryDark5};

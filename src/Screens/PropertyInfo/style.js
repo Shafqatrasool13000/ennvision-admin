@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { lightblue2, lightGrey, lightGrey2, lightGrey4, lightGrey5, lightGrey6, PrimaryColor, secondaryDark4, tertiaryGrey14, tertiaryGrey15, tertiaryGrey16, tertiaryGrey7, tertiaryGrey9, whiteColor } from "../../Components/GlobalStyle";
+import { lightblue2, lightGrey, lightGrey2, lightGrey4, lightGrey6, PrimaryColor, secondaryDark4, tertiaryGrey14, tertiaryGrey15, tertiaryGrey16, tertiaryGrey7, whiteColor } from "../../Components/GlobalStyle";
 
 export const PropertyInfo = styled.div`
 padding-top: 40px;
-background-color: ${tertiaryGrey9};
+background-color: #FFFFFF;
 
 .heading-bar{
 padding: 20px;
@@ -65,7 +65,6 @@ font-family: 'EnnVisionsMedium';
 
 margin-top: 40px;
 border-radius: 7px;
-height: 44px;
 padding: 3px;
 border-radius: 4px;
 
@@ -84,36 +83,27 @@ color: ${secondaryDark4};
 }
 
 .place-located{
+ margin-top: 46px;
 
 }
 
 .address-details{
 
+.col-md-4,.col-sm-6,.col{
+margin-top: 16px;
 }
-
-.add-property{
-
-}
-
-.property-detail-box{
 
 }
 
-.property-detail-info{
-
-}
-
-.additonal-info{
-
-.gallery{
-
-}
-}
 
 
 `
 export const AdditionalDetailGalleryStyled = styled.div`
+
 margin-top: 50px;
+padding-bottom: 24px;
+
+
 .head-bar{
 background: ${tertiaryGrey16};
 border: 1px solid ${lightGrey2};
@@ -125,7 +115,14 @@ color: ${tertiaryGrey7};
 }
 }
 
+.inner-container{
+border: 1px solid #EFEFF4;
+border-radius: 4px;
+padding: 10px;
+}
+
 .gallery{
+    
 .picture{
 position: relative;
 
@@ -163,8 +160,6 @@ img{
 height: 19px;
 }
 
-
-
 .add-text{
 color: ${tertiaryGrey14};
 font-size: 18px;
@@ -178,6 +173,9 @@ color: ${lightGrey};
 
 }
 
+.bottom-btns{
+width: 100%;
+}
 }
 `
 
@@ -203,7 +201,7 @@ background-color: red;
 }
 
 .features-container{
-border-bottom: 1px solid black;
+border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 &:not(:last-child){
 }
 &-title{
@@ -219,4 +217,13 @@ font-size: 14px;
 }
 }
 }
+`
+
+export const GenerateInfoStyled=styled.div`
+margin-top: 57px;
+.input-section{
+margin-top: 18px;
+}
+
+
 `
