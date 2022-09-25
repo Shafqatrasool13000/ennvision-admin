@@ -1,11 +1,11 @@
-import React from "react";
 import { Field, ErrorMessage } from "formik";
 import ErrorMsg from "../ErrorMessage";
 import { Select } from "antd";
 import { CustomSelectContainer } from "./style";
+import dropDownIcon from '../../assets/icons/ic_add_property_search.svg';
 
 const SelectComp = (props) => {
-  const { name, placeholder, loading , handleSelectValue = null , onSelect, defaultValue, label, options, ...rest } =
+  const { name, placeholder, loading , handleSelectValue = null , onSelect, defaultValue, label, options,icon={dropDownIcon}, ...rest } =
     props;
 
   const OptionsArr = options?.map((option) => {
@@ -36,6 +36,7 @@ const SelectComp = (props) => {
                     .toLowerCase()
                     .localeCompare(optionB.children.toLowerCase())
                 }
+                suffixIcon={<img src={icon} alt="search"/>}
                 name={name}
                 {...rest}
                 id={name}
@@ -44,6 +45,7 @@ const SelectComp = (props) => {
                 onChange={(val) => {
                   form.setFieldValue(name, val);
                 }}
+                
                 loading={loading}
                 onSelect={(value) => handleSelectValue(value)}
               >

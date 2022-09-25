@@ -29,6 +29,11 @@ import BecomePro2 from './Screens/BecomeProfessional/BecomePro';
 import PostDetails from "./Screens/PostDetails/Index";
 import PaymentInfo from './Screens/BillSummary/Index';
 import PropertyInfo from './Screens/PropertyInfo/Index';
+import ListProperty1 from './Screens/PropertyList/ListProperty1/Index';
+import ListProperty2 from './Screens/PropertyList/ListProperty2/Index';
+import ListProperty3 from './Screens/PropertyList/ListProperty3/Index';
+import ListProperty4 from './Screens/PropertyList/ListProperty4/Index';
+import ListProperty5 from './Screens/PropertyList/ListProperty5/Index';
 
 export const SidebarContext = createContext();
 
@@ -65,26 +70,39 @@ function App() {
           </ProtectedRoute>
         }>
           <Route index element={<Dashboard />} />
+
           <Route path="create-user" element={<CreateUser />} />
           <Route path="user-list" element={<UserList />} />
           <Route path="edit-user/:id" element={<EditUser />} />
           <Route path="user-profile/:id" element={<UserProfile />} />
+
           <Route path="property-list" element={<PropertyList />} />
+          <Route path="list-property-1" element={<ListProperty1 />} />
+          <Route path="list-property-2" element={<ListProperty2 />} />
+          <Route path="list-property-3" element={<ListProperty3 />} />
+          <Route path="list-property-4" element={<ListProperty4 />} />
+          <Route path="list-property-5" element={<ListProperty5 />} />
+          <Route path="list-property-5-1" element={<PropertyList />} />
           <Route path="property-details/:id" element={<PropertyDetails />} />
+
           <Route path="create-professional" element={<CreateProfessional />} />
+          <Route path="professional-list" element={<ProfessionalList />} /> 
           <Route path="verify-otp" element={<VerifyOtp />} />
           <Route path="become-professional" element={<BecomeProfessional />} />
-          <Route path="professional-list" element={<ProfessionalList />} /> 
           <Route path="edit-professional/:id" element={<EditProfessional />} />
           <Route path="professional-profile/:id" element={<ProfessionalProfile />} />
+
           <Route path="post-list" element={<PostList />} />
           <Route path="post-details/:id" element={<PostDetails />} />
+
           <Route path="story-list" element={<StoryList />} />
           <Route path="request-list" element={<RequestList />} />
           <Route path="newsfeed-list" element={<NewsfeedList />} />
           <Route path="property-info" element={<PropertyInfo />} />
+
           <Route path="confirmed" element={<Confirmed />} />
           <Route path="confirmation" element={<Confirmaton />} />
+          
           <Route path="become-pro2" element={<BecomePro2 />} />
           <Route path="bill-info" element={<PaymentInfo />} />
         </Route>

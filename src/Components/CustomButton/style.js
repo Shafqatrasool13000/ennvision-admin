@@ -15,6 +15,7 @@ export const CustormButtonContainer = styled.div`
     width: -moz-available;
     width: -webkit-fill-available;
     height: auto;
+    font-family: ${(props)=>props.fontFamily};
     cursor: pointer;
     &:hover {
     outline: none;

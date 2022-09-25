@@ -6,7 +6,9 @@ import { useNavigate } from 'react-router-dom';
 import CustomDrawer from '../Drawer/Index';
 
 const Sidebar = () => {
+    
     const navigate = useNavigate();
+
     const { showSidebar } = useContext(SidebarContext);
     const [sidebarData, setSidebarData] = useState([
         { create_link: 'create-user', expand: false, list_link: 'user-list', name: 'User' }, { create_link: 'create-professional', expand: false, list_link: 'professional-list', name: 'Propessional' }, { create_link: '', expand: false, list_link: 'property-list', name: 'Property' }, { create_link: '', expand: false, list_link: 'post-list', name: 'Post' },
@@ -31,7 +33,7 @@ const Sidebar = () => {
             <p onClick={naivgateDashboard}>Dashboard</p>
             {
                 sidebarData.map(({ name, list_link, create_link, expand }, index) => (
-                    <div className='inner-container'>
+                    <div key={index} className='inner-container'>
                         <p className='mt-2' onClick={() => expandMenu(index)}>{name}</p>
                         {
                             <div className={`expand-menu ${expand ? 'd-block' : 'd-none'}`}>

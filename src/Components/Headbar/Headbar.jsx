@@ -1,12 +1,16 @@
-import React from 'react'
-import { HeadbarStyled } from './style'
+import { HeadbarStyled } from './style';
 
-const Headbar = ({title,icon=null}) => {
+const Headbar = ({title,icon=null,rightText=null}) => {
   return (
     <HeadbarStyled>
         <p className="title">{title}</p>
         {
             icon&&(<img src={icon} alt="" />)
+        }
+        {
+          rightText&&(
+            <p className="title">{rightText}</p>
+          )
         }
         
     </HeadbarStyled>
