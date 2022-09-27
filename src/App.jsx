@@ -32,8 +32,12 @@ import PropertyInfo from './Screens/PropertyInfo/Index';
 import ListProperty1 from './Screens/PropertyList/ListProperty1/Index';
 import ListProperty2 from './Screens/PropertyList/ListProperty2/Index';
 import ListProperty3 from './Screens/PropertyList/ListProperty3/Index';
-import ListProperty4 from './Screens/PropertyList/ListProperty4/Index';
-import ListProperty5 from './Screens/PropertyList/ListProperty5/Index';
+
+import PostList1 from './Screens/PostList/Post_List1';
+import PostList2 from './Screens/PostList/Post_List2';
+import PostList3 from './Screens/PostList/Post_List3';
+import PostList4 from './Screens/PostList/Post_List4';
+import PostList5 from './Screens/PostList/Post_List5';
 
 export const SidebarContext = createContext();
 
@@ -80,9 +84,13 @@ function App() {
           <Route path="list-property-1" element={<ListProperty1 />} />
           <Route path="list-property-2" element={<ListProperty2 />} />
           <Route path="list-property-3" element={<ListProperty3 />} />
-          <Route path="list-property-4" element={<ListProperty4 />} />
-          <Route path="list-property-5" element={<ListProperty5 />} />
-          <Route path="list-property-5-1" element={<PropertyList />} />
+          
+          <Route path="post-list-1" element={<PostList1 />} />
+          <Route path="post-list-2" element={<PostList2 />} />
+          <Route path="post-list-3" element={<PostList3 />} />
+          <Route path="post-list-4" element={<PostList4 />} />
+          <Route path="post-list-5" element={<PostList5 />} />
+
           <Route path="property-details/:id" element={<PropertyDetails />} />
 
           <Route path="create-professional" element={<CreateProfessional />} />
