@@ -8,21 +8,24 @@ height: 93vh;
 
 .inner-container{
 
+.head-bar{
+ background: #F5F5F5;
+ padding: 16px 8pxe;
+}
+
+
 .bill-info-side{
 background: #FFFFFF;
 border: 1px solid #F5F5F5;
 border-radius: 6px;
 height: 440px;
 
-.heading-bar{
- background: #F5F5F5;
- padding: 16px 0;
- &-title{
+
+ .head-bar-title{
 font-size: 14px;
 color: ${pureDark};
 font-family: 'EnnVisionsMedium';
 padding: 0 14px;
- }
 }
 
 .features{
@@ -50,7 +53,6 @@ margin-bottom: 0;
 background: #FFFFFF;
 border: 1px solid #F5F5F5;
 border-radius: 6px;
-padding: 16px;
 height: 440px;
 
 .head-bar{
@@ -62,6 +64,8 @@ padding: 0 14px;
 }
 }
 .payments{
+padding: 16px;
+
 &-type{
 border-bottom: 1px solid ${tertiaryGrey6};
 margin-top: 16px;

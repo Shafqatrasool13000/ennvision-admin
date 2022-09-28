@@ -9,7 +9,7 @@ const MobileTable = () => {
   return (
     <MobileTableStyled>
       <div className=" plus-icon d-md-none">
-        {/* <img src={addIcon} onClick={() => navigate("/estimates/createNew")} alt="add-icon" /> */}
+        {/* <img src={addIcon} onClick={() => console.log("")} alt="add-icon" /> */}
       </div>
       <div className="inner-section container">
        

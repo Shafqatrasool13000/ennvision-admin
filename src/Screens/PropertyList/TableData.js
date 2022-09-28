@@ -12,7 +12,7 @@ export const columns = [
       dataIndex: "id",
       key: "id",
       render: (text, record) => (
-        <Link className="table-link" to={`/estimates/${record.id}`}> {text+1} </Link>
+        <Link className="table-link" to='/'> {text+1} </Link>
       ),
     },
     {
@@ -22,7 +22,7 @@ export const columns = [
       render: (text, record) => (
           <div className="d-flex align-items-center">
             <img src={avatar} alt="avatar" />
-        <Link className="ms-3" to={`/estimates/${record.id}`}>
+        <Link className="ms-3" to='/'>
           {text.slice(0,10)+'...'}
         </Link>
           </div>
@@ -33,7 +33,7 @@ export const columns = [
       dataIndex: "price",
       key: "price",
       render: (text, record) => (
-        <Link to={`/estimates/${record.id}`}>
+        <Link to='/'>
           {text.slice(0,10)+'...'}
         </Link>
       ),
@@ -43,7 +43,7 @@ export const columns = [
       dataIndex: "location",
       key: "location",
       render: (text, record) => (
-        <Link to={`/estimates/${record.id}`}>
+        <Link to='/'>
           {text.slice(0,10)+'...'}
         </Link>
       ),
@@ -53,7 +53,7 @@ export const columns = [
       key: "propertyType",
       dataIndex: "propertyType",
       render: (text, record) => (
-        <Link to={`/estimates/${record.id}`}>
+        <Link to='/'>
   
           {text.slice(0,10)+'...'}
         </Link>
@@ -64,7 +64,7 @@ export const columns = [
       key: "bed",
       dataIndex: "bed",
       render: (text, record) => (
-        <Link to={`/estimates/${record.id}`}>
+        <Link to='/'>
   
           {"0"+text}
         </Link>
@@ -75,7 +75,7 @@ export const columns = [
       key: "bath",
       dataIndex: "bath",
       render: (text, record) => (
-        <Link to={`/estimates/${record.id}`}>
+        <Link to='/'>
           {"0"+text}
         </Link>
       ),
@@ -121,7 +121,7 @@ export const columns = [
               className="action_icons deleteicon"
   
             />
-            <Link to={`/estimates/update/${record.id}`}>
+            <Link to='/'>
               <img
                 src={editIcon}
                 alt="edit Icon"

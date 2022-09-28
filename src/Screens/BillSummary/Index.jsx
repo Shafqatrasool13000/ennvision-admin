@@ -9,8 +9,11 @@ import unselect  from '../../assets/icons/ic_add_property_payment.svg';
 import plusIcon from '../../assets/icons/ic_add_property_add_card.svg';
 import CustomButton from "../../Components/CustomButton/Index";
 import { lightblue2 } from "../../Components/GlobalStyle";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
+
+  const navigate=useNavigate();
 
   const billSummaryData=[
     {title:'Auto populate you home listing information',amount:'$50.00'},
@@ -34,8 +37,8 @@ const Index = () => {
         <Row>
           <Col md={6}>
             <div className="bill-info-side">
-              <div className="heading-bar">
-                <h6 className="heading-bar-title">Billing Info</h6>
+              <div className="head-bar">
+                <h6 className="head-bar-title">Billing Info</h6>
               </div>
 
               <div className="features">
@@ -50,13 +53,14 @@ const Index = () => {
               </div>
               <div className="checkout-btn d-flex justify-content-center pb-4 mt-5">
               <CustomButton
-                    bgcolor={`${lightblue2}`}
-                    color="white"
-                    padding="8px 8px"
-                    width="94%"
-                    type="submit"
-                    title="Check Out"
-                    margin="auto"
+              bgcolor={`${lightblue2}`}
+              color="white"
+              padding="8px 8px"
+              width="94%"
+              type="submit"
+              title="Check Out"
+              margin="auto"
+              clicked={()=>navigate("/property-info")}
                   />
               </div>
             </div>

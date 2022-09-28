@@ -11,7 +11,7 @@ export const columns = [
     dataIndex: "id",
     key: "id",
     render: (text, record) => (
-      <Link className="table-link" to={`/estimates/${record.id}`}> {text+1} </Link>
+      <Link className="table-link" to='/'> {text+1} </Link>
     ),
   },
   {
@@ -19,7 +19,7 @@ export const columns = [
     dataIndex: "category",
     key: "category",
     render: (text, record) => (
-        <Link className="ms-3" to={`/estimates/${record.id}`}>
+        <Link className="ms-3" to='/'>
           {text.slice(0,8)+'...'}
         </Link>
     ),
@@ -28,7 +28,7 @@ export const columns = [
     dataIndex: "title",
     key: "title",
     render: (text, record) => (
-        <Link className="ms-3" to={`/estimates/${record.id}`}>
+        <Link className="ms-3" to='/'>
           {text.slice(0,8)+'...'}
         </Link>
     ),
@@ -37,7 +37,7 @@ export const columns = [
     dataIndex: "comments",
     key: "comments",
     render: (text, record) => (
-        <Link className="ms-3" to={`/estimates/${record.id}`}>
+        <Link className="ms-3" to='/'>
           {text.slice(0,8)+'...'}
         </Link>
     ),
@@ -46,7 +46,7 @@ export const columns = [
     dataIndex: "likes",
     key: "likes",
     render: (text, record) => (
-        <Link className="ms-3" to={`/estimates/${record.id}`}>
+        <Link className="ms-3" to='/'>
           {text.slice(0,8)+'...'}
         </Link>
     ),
@@ -55,7 +55,7 @@ export const columns = [
     dataIndex: "shares",
     key: "shares",
     render: (text, record) => (
-        <Link className="ms-3" to={`/estimates/${record.id}`}>
+        <Link className="ms-3" to='/'>
           {text.slice(0,8)+'...'}
         </Link>
     ),
@@ -64,7 +64,7 @@ export const columns = [
     dataIndex: "saved",
     key: "saved",
     render: (text, record) => (
-        <Link className="ms-3" to={`/estimates/${record.id}`}>
+        <Link className="ms-3" to='/'>
           {text.slice(0,8)+'...'}
         </Link>
     ),
@@ -74,7 +74,7 @@ export const columns = [
     dataIndex: "boost",
     key: "boost",
     render: (text, record) => (
-      <Link to={`/estimates/${record.id}`}>
+      <Link to='/'>
         {text+'ss'}
       </Link>
     ),
@@ -84,7 +84,7 @@ export const columns = [
     dataIndex: "views",
     key: "views",
     render: (text, record) => (
-      <Link to={`/estimates/${record.id}`}>
+      <Link to='/'>
         {text.slice(0,8)+'...'}
       </Link>
     ),
@@ -94,7 +94,7 @@ export const columns = [
     key: "booking",
     dataIndex: "booking",
     render: (text, record) => (
-      <Link to={`/estimates/${record.id}`}>
+      <Link to='/'>
 
         {text+'ed'}
       </Link>
@@ -123,7 +123,7 @@ export const columns = [
     key: "createdAt",
     dataIndex: "createdAt",
     render: (text, record) => (
-      <Link to={`/estimates/${record.id}`}>
+      <Link to='/'>
 
         {text.slice(0,8)+'...'}
       </Link>
@@ -144,7 +144,7 @@ export const columns = [
             className="action_icons deleteicon"
 
           />
-          <Link to={`/estimates/update/${record.id}`}>
+          <Link to='/'>
             <img
               src={editIcon}
               alt="edit Icon"

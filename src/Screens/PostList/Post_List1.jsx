@@ -7,8 +7,12 @@ import dropDown from '../../assets/icons/ic_drop_down.svg';
 import icon1 from '../../assets/icons/ic_newsfeed_like.svg';
 import icon2 from '../../assets/icons/ic_newsfeed_saved.svg';
 import icon3 from '../../assets/icons/ic_newsfeed_sent.svg';
+import { useNavigate } from 'react-router-dom';
 
 const Post_List1 = () => {
+
+  const navigate=useNavigate();
+
   return (
     <PostList1Styled>
 
@@ -25,7 +29,7 @@ const Post_List1 = () => {
             <img src={icon3} alt="" />
           </div>
         </div>
-        <div className="submit-btn">
+        <div className="submit-btn mt-2">
           <CustomButton
             bgcolor={lightblue2}
             color="white"
@@ -36,7 +40,7 @@ const Post_List1 = () => {
             margin="auto"
             fontSize='18px'
             fontFamily='EnnVisionsMedium'
-          // clicked={() => editHandler(content)}
+          clicked={() => navigate('/post-list-5')}
           />
         </div>
       </div>

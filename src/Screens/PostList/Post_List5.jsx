@@ -11,10 +11,13 @@ import { Col, Form, Row } from 'react-bootstrap';
 import FormControl from "../../Components/FormControl";
 import { Formik } from 'formik';
 import * as Yup from "yup";
+import { useNavigate } from 'react-router-dom';
 
 
 
 const Post_List5 = () => {
+
+  const navigate=useNavigate();
 
   let initialValues = {
     email: "",
@@ -64,7 +67,7 @@ const Post_List5 = () => {
                       margin="auto"
                       fontSize='18px'
                       fontFamily='EnnVisionsMedium'
-                    // clicked={() => editHandler(content)}
+                    clicked={() => navigate('/post-list')}
                     />
                   </div>
                 </div>

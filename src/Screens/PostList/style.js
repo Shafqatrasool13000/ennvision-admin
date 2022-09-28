@@ -448,8 +448,8 @@ flex-direction:column;
 width: 100%;
 
 @media screen and (max-width:768px) {
-  height: 100%;
-  padding-top: 18px;
+height: 100%;
+padding-top: 18px;
 }
 .inner-section{
 background: #FFFFFF;

@@ -16,7 +16,7 @@ const Index = () => {
           <img src={ic_logo} alt="ic_logo" className="logo" />
         </div>
         <h1>DOWNLOAD SUCCESSFULLY</h1>
-        <p>Estimates<Link to="#" style={{color:'#156985',fontWeight:'bold'}}> Improve Canada Mall</Link> is download<br/> successfully by<Link to="#" style={{color:'#156985',fontWeight:'bold'}}> O'Neil McLean</Link></p>
+        <p>Nothing<Link to="#" style={{color:'#156985',fontWeight:'bold'}}> Improve Canada Mall</Link> is download<br/> successfully by<Link to="#" style={{color:'#156985',fontWeight:'bold'}}> O'Neil McLean</Link></p>
         {/* <div className="login-container-card-btn">
              <button  className="login-container-card-btn-yes">Yes!</button>
              <button  className="login-container-card-btn-no">cancel</button>

@@ -12,7 +12,7 @@ export const columns = [
       dataIndex: "id",
       key: "id",
       render: (text, record) => (
-        <Link className="table-link" to={`/estimates/${record.id}`}> {text+1} </Link>
+        <Link className="table-link" to='/'> {text+1} </Link>
       ),
     },
     {
@@ -20,7 +20,7 @@ export const columns = [
       dataIndex: "category",
       key: "category",
       render: (text, record) => (
-        <Link to={`/estimates/${record.id}`}>
+        <Link to='/'>
           {text.slice(0,8)+'...'}
         </Link>
       ),
@@ -32,7 +32,7 @@ export const columns = [
       render: ({name,img}, record) => (
           <div className="d-flex align-items-center">
             <img src={avatar} alt="avatar" />
-        <Link className="ms-3" to={`/estimates/${record.id}`}>
+        <Link className="ms-3" to='/'>
           {name}
         </Link>
           </div>
@@ -44,7 +44,7 @@ export const columns = [
       render: ({name,img}, record) => (
           <div className="d-flex align-items-center">
             <img src={avatar} alt="avatar" />
-        <Link className="ms-3" to={`/estimates/${record.id}`}>
+        <Link className="ms-3" to='/'>
           {name}
         </Link>
           </div>
@@ -55,7 +55,7 @@ export const columns = [
       dataIndex: "bookingType",
       key: "bookingType",
       render: (text, record) => (
-        <Link to={`/estimates/${record.id}`}>
+        <Link to='/'>
           {text.slice(0,8)+'...'}
         </Link>
       ),
@@ -65,7 +65,7 @@ export const columns = [
       dataIndex: "bookingAt",
       key: "bookingAt",
       render: (text, record) => (
-        <Link to={`/estimates/${record.id}`}>
+        <Link to='/'>
           {text.slice(0,8)+'...'}
         </Link>
       ),
@@ -91,7 +91,7 @@ export const columns = [
       key: "createdAt",
       dataIndex: "createdAt",
       render: (text, record) => (
-        <Link to={`/estimates/${record.id}`}>
+        <Link to='/'>
           {text.slice(0,8)+'...'}
         </Link>
       ),
@@ -110,7 +110,7 @@ export const columns = [
               className="action_icons deleteicon"
   
             />
-            <Link to={`/estimates/update/${record.id}`}>
+            <Link to='/'>
               <img
                 src={editIcon}
                 alt="edit Icon"

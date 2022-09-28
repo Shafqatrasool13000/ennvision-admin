@@ -11,7 +11,7 @@ export const columns = [
       dataIndex: "id",
       key: "id",
       render: (text, record) => (
-        <Link className="table-link" to={`/estimates/${record.id}`}> {text+1} </Link>
+        <Link className="table-link" to='/'> {text+1} </Link>
       ),
     },
     {
@@ -19,7 +19,7 @@ export const columns = [
       dataIndex: "storyLayout",
       key: "storyLayout",
       render: (text, record) => (
-          <Link className="ms-3" to={`/estimates/${record.id}`}>
+          <Link className="ms-3" to='/'>
             {text.slice(0,8)+'...'}
           </Link>
       ),
@@ -29,7 +29,7 @@ export const columns = [
       dataIndex: "storyType",
       key: "storyType",
       render: (text, record) => (
-        <Link to={`/estimates/${record.id}`}>
+        <Link to='/'>
           {text.slice(0,8)+'...'}
         </Link>
       ),
@@ -39,7 +39,7 @@ export const columns = [
       dataIndex: "location",
       key: "location",
       render: (text, record) => (
-        <Link to={`/estimates/${record.id}`}>
+        <Link to='/'>
           {text.slice(0,8)+'...'}
         </Link>
       ),
@@ -49,7 +49,7 @@ export const columns = [
       key: "boost",
       dataIndex: "boost",
       render: (text, record) => (
-        <Link to={`/estimates/${record.id}`}>
+        <Link to='/'>
   
           {text.slice(0,8)+'...'}
         </Link>
@@ -59,7 +59,7 @@ export const columns = [
       key: "tags",
       dataIndex: "tags",
       render: (text, record) => (
-        <Link to={`/estimates/${record.id}`}>
+        <Link to='/'>
           {text.slice(0,8)+'...'}
         </Link>
       ),
@@ -87,7 +87,7 @@ export const columns = [
       key: "disappear",
       dataIndex: "disappear",
       render: (text, record) => (
-        <Link to={`/estimates/${record.id}`}>
+        <Link to='/'>
           {text.slice(0,8)+'...'}
         </Link>
       ),
@@ -97,7 +97,7 @@ export const columns = [
       key: "createdAt",
       dataIndex: "createdAt",
       render: (text, record) => (
-        <Link to={`/estimates/${record.id}`}>
+        <Link to='/'>
   
           {text.slice(0,8)+'...'}
         </Link>
@@ -118,7 +118,7 @@ export const columns = [
               className="action_icons deleteicon"
   
             />
-            <Link to={`/estimates/update/${record.id}`}>
+            <Link to='/'>
               <img
                 src={editIcon}
                 alt="edit Icon"

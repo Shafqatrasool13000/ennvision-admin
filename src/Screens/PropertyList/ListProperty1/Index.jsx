@@ -195,6 +195,7 @@ const Index = () => {
                           margin="auto"
                           fontSize='16px'
                           fontFamily='EnnVisionsMedium'
+                          clicked={()=>navigate("/list-property-2")}
                         />
                       </div>
                     </div>

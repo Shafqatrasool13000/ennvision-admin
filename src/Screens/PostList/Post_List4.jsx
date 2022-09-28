@@ -8,8 +8,12 @@ import icon1 from '../../assets/icons/ic_newsfeed_like.svg';
 import icon2 from '../../assets/icons/ic_newsfeed_saved.svg';
 import icon3 from '../../assets/icons/ic_newsfeed_sent.svg';
 import { Col, Row } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 const Post_List1 = () => {
+
+  const navigate=useNavigate();
+
   return (
     <PostList4Styled>
 
@@ -62,6 +66,7 @@ const Post_List1 = () => {
             margin="auto"
             fontSize='18px'
             fontFamily='EnnVisionsMedium'
+            clicked={()=>navigate("/post-list-5")}
           />
         </div>
       </div>

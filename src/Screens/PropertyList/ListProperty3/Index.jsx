@@ -134,6 +134,7 @@ const Index = () => {
               margin="auto"
               fontSize='16px'
               fontFamily='EnnVisionsMedium'
+              clicked={()=>navigate("/bill-info")}
           />
                 </div>
               </div>
@@ -162,6 +163,7 @@ const Index = () => {
                                             margin="auto"
                                             fontSize='16px'
                                             fontFamily='EnnVisionsMedium'
+                                            
                                         />
                                     </div>
                                 </div>
