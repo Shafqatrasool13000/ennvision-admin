@@ -2,8 +2,6 @@ import styled from 'styled-components';
 import { lightblue2, lightDark, pureDark, tertiaryDark, tertiaryGrey14, tertiaryGrey7 } from '../../Components/GlobalStyle';
 
 export const PostDetailsStyled = styled.div`
-background: rgba(33, 33, 33, 0.37);
-height: 93vh;
 display: flex;
 flex-direction: column;
 justify-content: center;

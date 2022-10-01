@@ -25,7 +25,7 @@ const Index = () => {
                 <Row>
                     <Col md={6}>
                         <div className="left-side">
-                        <img className="post-img" src={postImg} alt="post" />
+                        <img className="post-img rounded" src={postImg} alt="post" />
                         </div>
                     </Col>
                     <Col md={6}>

@@ -66,6 +66,10 @@ font-weight: 600;
 color: #aab2ba;
 }
 
+.cursor-pointer{
+cursor: pointer;
+}
+
 .ant-drawer-close {
 visibility: hidden;
 }

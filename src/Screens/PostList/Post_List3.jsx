@@ -10,25 +10,29 @@ import icon3 from '../../assets/icons/ic_newsfeed_sent.svg';
 import { Col, Row } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
-const Post_List3 = () => {
+const Post_List3 = ({ setIsPost3Modal, setIsPost4Modal }) => {
 
-  const navigate=useNavigate();
+  const navigate = useNavigate();
+
+  const showPost4Modal = () => {
+    setIsPost3Modal(false);
+    setIsPost4Modal(true);
+  }
 
   return (
     <PostList3Styled>
-
       <div className="inner-section">
         <Row className=''>
-          <Col className='p-1' xs={7}>  
-          <img src={post} alt="" className="post-img" />
-          <img src={post} alt="" className="post-img mt-2" />
+          <Col className='p-1' xs={7}>
+            <img src={post} alt="" className="post-img" />
+            <img src={post} alt="" className="post-img mt-2" />
           </Col>
           <Col className='p-1 mt-3' xs={5}>  <img src={post} alt="" className="post-img" />
-          <img src={post} alt="" className="post-img mt-2" />
-          <div className='p-1 mt-2 position-relative' xs={3}>  <img src={post} alt="" />
-          <p className='position-absolute more-img-text'>3+</p>
-          <div class="overlay"></div>
-          </div>
+            <img src={post} alt="" className="post-img mt-2" />
+            <div className='p-1 mt-2 position-relative' xs={3}>  <img src={post} alt="" />
+              <p className='position-absolute more-img-text'>3+</p>
+              <div class="overlay"></div>
+            </div>
           </Col>
         </Row>
         <div className="choose-section d-flex flex-wrap justify-content-between">
@@ -37,9 +41,9 @@ const Post_List3 = () => {
             <img className='mb-2 ms-1' src={dropDown} alt="" />
           </div>
           <div className="choose-section-icons mt-xs-2 mt-sm-0">
-          <img src={icon1} alt="" />
+            <img src={icon1} alt="" />
             <img src={icon2} alt="" />
-            <img src={icon3} alt="" />
+            <img className='cursor-pointer' onClick={showPost4Modal} src={icon3} alt="" />
             <img src={icon1} alt="" />
             <img src={icon2} alt="" />
             <img src={icon3} alt="" />
@@ -56,7 +60,6 @@ const Post_List3 = () => {
             margin="auto"
             fontSize='18px'
             fontFamily='EnnVisionsMedium'
-            clicked={()=>navigate("/post-list-5")}
           />
         </div>
       </div>

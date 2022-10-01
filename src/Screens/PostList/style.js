@@ -147,16 +147,11 @@ background-color:#007AFF ;
 
 }
 `
-
 export const PostList1Styled=styled.div`
-
-background-color: rgba(33, 33, 33, 0.37);
-height: 93vh;
 display: flex;
 justify-content: center;
 align-items: center;
 flex-direction:column;
-
 
 .inner-section{
 background: ${whiteColor};
@@ -198,9 +193,6 @@ margin-right: 10px;
 `;
 
 export const PostList2Styled=styled.div`
-
-background-color: rgba(33, 33, 33, 0.37);
-height: 93vh;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -277,9 +269,6 @@ margin-right: 10px;
 `;
 
 export const PostList3Styled=styled.div`
-
-background-color: rgba(33, 33, 33, 0.37);
-height: 93vh;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -354,9 +343,6 @@ margin-right: 10px;
 `;
 
 export const PostList4Styled=styled.div`
-
-background-color: rgba(33, 33, 33, 0.37);
-height: 93vh;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -438,9 +424,6 @@ margin-right: 10px;
 `;
 
 export const PostList5Styled=styled.div`
-
-background-color: rgba(33, 33, 33, 0.37);
-height: 93vh;
 display: flex;
 justify-content: center;
 align-items: center;

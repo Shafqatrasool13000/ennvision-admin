@@ -7,11 +7,16 @@ import addIcon from '../../assets/icons/ic_add_property_add_photo.svg';
 import Headbar from "../../Components/Headbar/Headbar";
 import CustomButton from "../../Components/CustomButton/Index";
 import { lightblue2, tertiaryGrey17 } from "../../Components/GlobalStyle";
+import { useNavigate } from "react-router-dom";
 
 const Gallery = () => {
 
+    const navigate=useNavigate();
     const galleryData = [property1, property2, property1, property2, property1, property2, property1, property2];
 
+    const navigateToList=() => {
+      navigate('/property-list')
+    }
     return (
         <AdditionalDetailGalleryStyled>
             <Container>
@@ -58,7 +63,7 @@ const Gallery = () => {
                 title="Submit"
                 margin="auto"
                 fontSize='18px'
-                
+                clicked={navigateToList}
                 />
                 </Col>
                </Row>

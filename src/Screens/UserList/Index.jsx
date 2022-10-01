@@ -13,9 +13,11 @@ import editIcon from "../../assets/icons/ic_edit.svg";
 import {Space, Rate } from "antd";
 import CustomModal from '../../Components/Modal/CustomModal';
 import Confirmation from "../Confirmation/Index";
+import EditPost from '../PostList/Post_List5';
 
 const Index = () => {
-  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [isDeleteModal, setIsDeleteModal] = useState(false);
+  const [isPostModal, setIsPostModal] = useState(false);
 
   const columns = [
   {
@@ -105,7 +107,7 @@ const Index = () => {
         <div style={{ display: "flex", gap: "6px" }}>
         </div>
         <div style={{ display: "flex", gap: "4px" }}>
-          <img onClick={()=>setIsModalVisible(true)}
+          <img onClick={()=>setIsDeleteModal(true)}
             src={deleteIcon}
             alt="delete Icon"
             className="action_icons deleteicon"
@@ -129,9 +131,10 @@ const Index = () => {
       <div className="d-md-none">
         <MobileTable/>
       </div>
-      <CustomModal isModalVisible={isModalVisible} setIsModalVisible={setIsModalVisible}>
-        <Confirmation setIsModalVisible={setIsModalVisible}/>
+      <CustomModal isModalVisible={isDeleteModal} setIsModalVisible={setIsDeleteModal}>
+        <Confirmation setIsModalVisible={setIsDeleteModal}/>
       </CustomModal>
+      
       <div className="d-none d-md-block">
       
         <Container>

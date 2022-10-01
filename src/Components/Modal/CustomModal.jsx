@@ -5,7 +5,7 @@ const CustomModal = ({ children,isModalVisible, setIsModalVisible }) => {
     setIsModalVisible(false);
   };
   return (
-    <Modal visible={isModalVisible} footer={null} onCancel={handleCancel} centered={true} closable={false}>
+    <Modal width={'auto'} visible={isModalVisible} footer={null} onCancel={handleCancel} centered={true} closable={false}>
       {children}
     </Modal>
   )

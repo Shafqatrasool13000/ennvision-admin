@@ -9,7 +9,12 @@ import icon2 from '../../assets/icons/ic_newsfeed_saved.svg';
 import icon3 from '../../assets/icons/ic_newsfeed_sent.svg';
 import { Col, Row } from 'react-bootstrap';
 
-const Post_List1 = () => {
+const Post_List1 = ({setIsPost2Modal,setIsPost3Modal}) => {
+
+  const showPost3Modal = () => {
+    setIsPost2Modal(false);
+    setIsPost3Modal(true);
+  }
   return (
     <PostList2Styled>
 
@@ -21,7 +26,7 @@ const Post_List1 = () => {
           <Col className='p-1 mt-4 position-relative last-img' xs={3}>  <img src={post} alt="" className="post-img" />
           <p className='position-absolute text'>3+</p>
           <div class="overlay">
-  </div>
+          </div>
           </Col>
         </Row>
 
@@ -32,8 +37,8 @@ const Post_List1 = () => {
           </div>
           <div className="choose-section-icons mt-xs-2 mt-sm-0">
           <img src={icon1} alt="" />
-            <img src={icon2} alt="" />
-            <img src={icon3} alt="" />
+            <img onClick={showPost3Modal} src={icon2} className='cursor-pointer' alt="" />
+            <img  src={icon3} alt="" />
             <img src={icon1} alt="" />
             <img src={icon2} alt="" />
             <img src={icon3} alt="" />

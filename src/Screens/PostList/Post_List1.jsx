@@ -7,11 +7,13 @@ import dropDown from '../../assets/icons/ic_drop_down.svg';
 import icon1 from '../../assets/icons/ic_newsfeed_like.svg';
 import icon2 from '../../assets/icons/ic_newsfeed_saved.svg';
 import icon3 from '../../assets/icons/ic_newsfeed_sent.svg';
-import { useNavigate } from 'react-router-dom';
 
-const Post_List1 = () => {
+const Post_List1 = ({ setIsPost1Modal, setIsPost2Modal }) => {
 
-  const navigate=useNavigate();
+  const showPost2Modal = () => {
+    setIsPost1Modal(false);
+    setIsPost2Modal(true);
+  }
 
   return (
     <PostList1Styled>
@@ -24,7 +26,7 @@ const Post_List1 = () => {
             <img className='mb-2 ms-1' src={dropDown} alt="" />
           </div>
           <div className="choose-section-icons">
-            <img src={icon1} alt="" />
+            <img onClick={() => showPost2Modal(true)} className='cursor-pointer' src={icon1} alt="" />
             <img src={icon2} alt="" />
             <img src={icon3} alt="" />
           </div>
@@ -40,7 +42,6 @@ const Post_List1 = () => {
             margin="auto"
             fontSize='18px'
             fontFamily='EnnVisionsMedium'
-          clicked={() => navigate('/post-list-5')}
           />
         </div>
       </div>

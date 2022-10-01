@@ -15,7 +15,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-const Post_List5 = () => {
+const Post_List5 = ({setIsPostModal}) => {
 
   const navigate=useNavigate();
 
@@ -44,7 +44,7 @@ const Post_List5 = () => {
             <Row className='justify-content-center'>
               <Col md={6}>
                 <div className="left-side text-center">
-                  <img src={post} alt="" className="main-img" />
+                  <img src={post} alt="" className="main-img rounded" />
                   <div className="choose-section d-flex justify-content-between">
                     <div className="d-flex">
                       <p className="gallery">Gallery</p>
@@ -56,7 +56,7 @@ const Post_List5 = () => {
                       <img src={icon3} alt="" />
                     </div>
                   </div>
-                  <div className="submit-btn">
+                  <div className="submit-btn mt-3">
                     <CustomButton
                       bgcolor={lightblue2}
                       color="white"
@@ -67,7 +67,7 @@ const Post_List5 = () => {
                       margin="auto"
                       fontSize='18px'
                       fontFamily='EnnVisionsMedium'
-                    clicked={() => navigate('/post-list')}
+                    clicked={() => setIsPostModal(false)}
                     />
                   </div>
                 </div>
@@ -89,18 +89,18 @@ const Post_List5 = () => {
                   <p className="mini-title pb-2 btm-border">Tag People</p>
                   <div className="add-location mt-2">
                     <p className="mini-title mb-1 border-0">Add Location</p>
-                    <div className="locations d-flex justify-content-between">
-                      <button>Jauharabad</button>
-                      <button>Islamabad</button>
-                      <button>OshaToronto, Ontorio</button>
-                      <button>Osha</button>
+                    <div className="locations d-flex justify-content-sm-between mt-2 flex-wrap">
+                      <button className='ms-4 mt-2 mt-sm-0'>Jauharabad</button>
+                      <button className='ms-4 mt-2 mt-sm-0'>Islamabad</button>
+                      <button className='ms-4 mt-2 mt-sm-0'>OshaToronto, Ontorio</button>
+                      <button className='ms-4 mt-2 mt-sm-0'>Osha</button>
                     </div>
                   </div>
                 </div>
 
-                <div className="request-section mt-3 pb-2">
+                <div className="request-section mt-2 pb-2">
                   <div className="d-flex justify-content-between btm-border">
-                    <p className="text mini-title mb-0">Contact Request</p>
+                    <p className="text mini-title mb-2">Contact Request</p>
                     <Form.Check
                       type="switch"
                       id="custom-switch"
@@ -115,7 +115,7 @@ const Post_List5 = () => {
                     />
                   </div>
                 </div>
-                <p className="advanced-title mt-2">Advanced settings</p>
+                <p className="advanced-title mt-2 mb-1">Advanced settings</p>
                 <div className="advanced-settings ">
                   <div className="d-flex justify-content-between">
                     <p className=" mini-title mb-0">Hide like and view counts in this post</p>
