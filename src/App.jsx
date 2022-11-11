@@ -45,9 +45,9 @@ function App() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [isLoggedIn, setisLoggedIn] = useState(true);
 
-  const logIn = () => {
-    setisLoggedIn(!isLoggedIn);
-  };
+  // const logIn = () => {
+  //   setisLoggedIn(!isLoggedIn);
+  // };
 
   const clearCacheData = () => {
     caches.keys().then((names) => {
@@ -84,7 +84,7 @@ function App() {
           <Route path="list-property-1" element={<ListProperty1 />} />
           <Route path="list-property-2" element={<ListProperty2 />} />
           <Route path="list-property-3" element={<ListProperty3 />} />
-          
+
           <Route path="post-list-1" element={<PostList1 />} />
           <Route path="post-list-2" element={<PostList2 />} />
           <Route path="post-list-3" element={<PostList3 />} />
@@ -94,7 +94,7 @@ function App() {
           <Route path="property-details/:id" element={<PropertyDetails />} />
 
           <Route path="create-professional" element={<CreateProfessional />} />
-          <Route path="professional-list" element={<ProfessionalList />} /> 
+          <Route path="professional-list" element={<ProfessionalList />} />
           <Route path="verify-otp" element={<VerifyOtp />} />
           <Route path="become-professional" element={<BecomeProfessional />} />
           <Route path="edit-professional/:id" element={<EditProfessional />} />
@@ -110,7 +110,7 @@ function App() {
 
           <Route path="confirmed" element={<Confirmed />} />
           <Route path="confirmation" element={<Confirmaton />} />
-          
+
           <Route path="become-pro2" element={<BecomePro2 />} />
           <Route path="bill-info" element={<PaymentInfo />} />
         </Route>
